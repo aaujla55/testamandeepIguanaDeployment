@@ -1,0 +1,19 @@
+<channel
+   name="amandeep_Channel4"
+   guid="B2BB7FEE73387B391A23FE4DB0BFE79F"
+   description=""
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="amandeep_Channel4-To-hCkLYDsmt8xOhB"
+      commit_id="c2f769a69cbff91505e80b796c78d5b88ed2332d"
+      commit_comment="added conf">
+      <dequeue_list>
+         <dequeue
+            source_name="amandeep_Channel1"
+            dequeue_guid="23DCDF0F44A57CC9C6ADDDC26D231895"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_channel/>
+</channel>

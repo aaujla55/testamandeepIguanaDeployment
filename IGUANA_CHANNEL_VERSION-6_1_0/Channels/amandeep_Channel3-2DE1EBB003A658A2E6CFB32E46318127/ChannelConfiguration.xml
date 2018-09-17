@@ -1,0 +1,45 @@
+<channel
+   name="amandeep_Channel3"
+   guid="2DE1EBB003A658A2E6CFB32E46318127"
+   description=""
+   start_automatically="false"
+   logging_level="2"
+   use_message_filter="true">
+   <to_file
+      output_dir="${destDiramandeep}/"
+      write_to_separate_file="true"
+      output_single_filename=""
+      use_prepended_info_as_filename="false"
+      output_file_id_type="1"
+      output_filename_mask="%i.txt"
+      temp_file_extension="tmp"
+      count_of_padding_digit="5"
+      ftp_server="ec2-184-72-202-147.compute-1.amazonaws.com"
+      ftp_username="amandeep"
+      ftp_password="LZEEnw3qGdqZkK7A+e1UEW+dX9ZaI8iei63DNkiF6kw="
+      ftp_path="${ftpPathamandeep}"
+      ftp_max_reconnect="5"
+      sftp_authentication_method="user_password"
+      use_ftp="true">
+      <dequeue_list>
+         <dequeue
+            source_name="amandeep_Channel1"
+            dequeue_guid="76BF7B6A8E27FF2AA6274D169996BB9E"/>
+      </dequeue_list>
+   </to_file>
+   <from_channel/>
+   <message_filter
+      filter_after_logging="true"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true"
+      translator_guid="amandeep_Channel3-Filter-4avHZ4KOXgGHEe"
+      translator_commit_id="81beae711a6665d62fa7706327739d449eab6dba"
+      translator_commit_comment="Import Translators: amandeep channels">
+   </message_filter>
+</channel>
